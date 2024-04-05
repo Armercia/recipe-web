@@ -20,7 +20,7 @@
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Recipe web</title>
+                    <title>Sweet Recipes</title>
                     <link rel="stylesheet" href="css/styles.css">
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"</head>
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -34,7 +34,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                                <a class="navbar-brand" href="#">LOGO</a>
+                                <a class="navbar-brand" href="#">SweetRecipe</a>
                                 <ul class="navbar-nav me-auto d-flex justify-content-center mb-2 mb-lg-0" id="nav-ul">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -49,10 +49,13 @@
                                         <a class="nav-link active" href="add_recipe.html">Add Recipe</a>
                                     </li>
                                 </ul>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
+                                <div class="search-bar">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                        <a id='login-button' class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="login.html">Login</a>                              
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -72,7 +75,6 @@
                                 <img src="images/appetizer1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 1</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -81,7 +83,6 @@
                                 <img src="images/appetizer2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 2</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -90,7 +91,6 @@
                                 <img src="images/appetizer3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 3</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -99,7 +99,6 @@
                                 <img src="images/appetizer4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 4</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -108,7 +107,6 @@
                                 <img src="images/appetizer5.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 5</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -117,7 +115,6 @@
                                 <img src="images/appetizer6.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Appetizer 6</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -134,7 +131,6 @@
                                 <img src="images/local1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -143,7 +139,6 @@
                                 <img src="images/local2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -152,7 +147,6 @@
                                 <img src="images/local3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -161,7 +155,6 @@
                                 <img src="images/local4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
@@ -170,7 +163,6 @@
                                 <img src="images/local5.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Amount: ₦</p>
                                 </div>
                                 </div>
                             </div>
