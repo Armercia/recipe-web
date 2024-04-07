@@ -27,41 +27,10 @@
                 <body>
                    <!-- BODY HEADER -->
                    <header id="nav-head" style="background-color: #F1EAFF">
-                    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #F1EAFF"> <!-- bg-body-tertiary -->
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                                <a class="navbar-brand" href="#">SweetRecipe</a>
-                                <ul class="navbar-nav me-auto d-flex justify-content-center mb-2 mb-lg-0" id="nav-ul">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#">Recipe</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#footer">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="add_recipe.html">Add Recipe</a>
-                                    </li>
-                                </ul>
-                                <div class="search-bar">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                        <a id='login-button' class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="login.html">Login</a>   
-                                        <a id='signup-button' class="btn btn-secondary nav-button" role="button" aria-disabled="false" href="signup.html">Signup</a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </header>
-                
+                   <?php 
+                            include('./shared/nav.php')
+                        ?>
+                   </header>
                 <!-- BODY MAIN SECTION -->
                 <main>
                     <!-- LIST OF RECIPE -->

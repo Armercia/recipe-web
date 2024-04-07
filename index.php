@@ -3,62 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Recipes | Login </title>
+    <title>Nosa Recipes Web</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"</head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <body>
-    <!-- BODY HEADER -->
-    <header id="nav-head" style="background-color: #F1EAFF">
-        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #F1EAFF"> <!-- bg-body-tertiary -->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="index.html">SweetRecipe</a>
-                    <ul class="navbar-nav mb-2 mb-lg-0 navbar-collapse justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold;">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="list_recipes.html">Recipe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="add_recipe.html">Add Recipe</a>
-                        </li>
-                    </ul>
+      <!-- BODY HEADER -->
+     <header id="nav-head" style="background-color: #F1EAFF">
+        <?php 
+            include('./shared/nav.php')
+        ?>
+        <div class="" style="max-width: auto; background-color: #F1EAFF;">
+            <div class="hero-container">
+                <div class="hero-column">
+                        <h2>Experience tasty, aromas, and ambiance intertwine to create unforgettable memories.</h2>
+                </div>
+                <div class="hero-column">
+                    <img src="images/hero.jpg" class="img-fluid rounded-start" alt="..." style="flex-shrink: 0;
+                    min-width: 100%;
+                    min-height: 100%">
                 </div>
             </div>
-        </nav>
-    </header>
-
-      
-    <!-- BODY MAIN SECTION -->
-    <main>
-        <div id="login-form-wrap" style="margin-top: 100px;">
-            <h2>Login</h2>
-            <form id="login-form">
-                <p>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
-                </p>
-                <p>
-                    <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
-                </p>
-                <p>
-                    <input type="submit" id="login" value="Login" style="background-color: #910A67; color: #fff;">
-                </p>
-            </form>
-            <div id="create-account-wrap">
-                <p>Not a member? <a href="signup.html">Create Account</a><p>
-            </div><!--create-account-wrap-->
         </div>
+    </header>
+     <!-- BODY MAIN SECTION -->
+     <main>
+        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <div id='faq'>
+            <h1 style="text-align: center;">Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer('faq1')">
+                    <h6>How can I find delivery restaurant around me?<span class="dropdown-icon">&#9660;</span></h6>
+                    <div class="answer" id="faq1">Answer</div>
+                </div>
+            </div>
+                
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer('faq2')">
+                    <h6>Can I order food with app?<span class="dropdown-icon">&#9660;</span></h6>
+                    <div class="answer" id="faq2">Answer</div>
+                </div>
+            </div>
+        </div>  
     </main>
-
-      <!-- FOOTER -->
-      <footer class="text-center text-white" id="footer" style="background-color: #910A67">
+    <!-- FOOTER -->
+    <footer class="text-center text-white" id="footer" style="background-color: #910A67">
         <!-- Grid container -->
         <div class="container">
             <!-- Section: Links -->
@@ -152,11 +141,12 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2024 Copyright:
-            <a class="text-white" href="#">sweetrecipe.com</a>
+            <a class="text-white" href="#">sweetrecipte.com</a>
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- JAVA SCRIPT LINK -->
+        <!-- JAVA SCRIPT LINK -->
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+</html>
