@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="index.html">SweetRecipe</a>
+            <a class="navbar-brand" href="index.php">SweetRecipe</a>
             <ul class="navbar-nav mb-2 mb-lg-0 navbar-collapse justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.php" style="font-weight: bold;">Home</a>
