@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosa Recipes Web</title>
+    <title>Armercia Recipes Web</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"</head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -11,7 +11,7 @@
       <!-- BODY HEADER -->
      <header id="nav-head" style="background-color: #F1EAFF">
         <?php 
-            include('./shared/nav.php')
+            include('.nav.php')
         ?>
         <div class="" style="max-width: auto; background-color: #F1EAFF;">
             <div class="hero-container">
@@ -28,7 +28,7 @@
     </header>
      <!-- BODY MAIN SECTION -->
      <main>
-        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <!-- CHEFS -->
         <div id='faq'>
             <h1 style="text-align: center;">Frequently Asked Questions</h1>
             <div class="faq-item">
@@ -141,12 +141,12 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2024 Copyright:
-            <a class="text-white" href="#">sweetrecipte.com</a>
+            <a class="text-white" href="#">armerciarecipe.com</a>
         </div>
         <!-- Copyright -->
     </footer>
         <!-- JAVA SCRIPT LINK -->
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
