@@ -76,10 +76,10 @@ main {
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<< LIST OF RECIPES >>>>>>>>>>>>>>>>>>>>>>>> */
-#recipe-cards {
+.recipe-cards {
     padding-top: 50px
 }
 
-#recipe-cards h3 {
+.recipe-cards h3 {
     text-align:center;
 }
