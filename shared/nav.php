@@ -5,21 +5,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="index.php">Sweet Recipe</a>
+                    <a class="navbar-brand" href="./index.php">Armercia Recipe</a>
                     <ul class="navbar-nav me-auto d-flex justify-content-center mb-2 mb-lg-0" id="nav-ul">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
 
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="list_recipes.php">Recipe</a>
+                            <a class="nav-link active" href="./list_recipes.php">Recipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.php#footer">Contact</a>
+                            <a class="nav-link active" href="./index.php#footer">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="add_recipe.php">Add Recipe</a>
+                            <a class="nav-link active" href="./add_recipe.php">Add Recipe</a>
                         </li>
                     </ul>
               
