@@ -18,17 +18,30 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.php#footer">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./add_recipe.php">Add Recipe</a>
-                        </li>
+                        <?php
+                            if (isset($_SESSION['isAuthenticated'])) {
+                                echo '
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./add_recipe.php">Add Recipe</a>
+                                </li>
+                                ';
+                            } 
+                        ?>
                     </ul>
               
                     <div class="search-bar">
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
-                            <a id='login-button' class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="login.php">Login</a>
-                            <a id='signup-button' class="btn btn-secondary nav-button" role="button" aria-disabled="false" href="signup.php">Signup</a>
+                            <?php
+                                if (!isset($_SESSION['isAuthenticated'])) {
+                            echo '                 <a id="login-button" class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="login.php">Login</a>
+                                            <a id="signup-button" class="btn btn-secondary nav-button" role="button" aria-disabled="false" href="signup.php">Signup</a>
+                            ';
+                                        } 
+                            ?>
+
                         </form>
                     </div>
             </div>

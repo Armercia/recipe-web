@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,12 +30,10 @@
                 <p>
                     <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
                 </p>
-                <p>
-                    <input type="submit" id="login" value="Login" style="background-color: #910A67; color: #fff;">
-                </p>
+                    <button type="button" id="login-btn" value="Login" style="background-color: #910A67; color: #fff;"> Signup </button>
             </form>
             <div id="create-account-wrap">
-                <p>Not a member? <a href="signup.html">Create Account</a><p>
+                <p>Not a member? <a href="./signup.php">Create Account</a><p>
             </div><!--create-account-wrap-->
         </div>
     </main>
@@ -47,4 +46,6 @@
         <?php 
             include('./shared/footer_links.php')
         ?>
+        <script src="./backend/scripts/login.js"> </script>
+      
 </body>

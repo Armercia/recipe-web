@@ -3,6 +3,7 @@ CREATE TABLE users (
     fullname VARCHAR(200) NOT NULL,
     email VARCHAR(100) NOT NULL,
     username VARCHAR(200) NOT NULL,
+    user_type ENUM ('admin', 'cook') DEFAULT 'cook';
     password VARCHAR(200) NOT NULL
 );
 

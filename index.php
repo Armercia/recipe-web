@@ -3,31 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosa Recipes Web</title>
+    <title>Restaurant Name</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"</head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <body>
-      <!-- BODY HEADER -->
-     <header id="nav-head" style="background-color: #F1EAFF">
-        <?php 
-            include('./shared/nav.php')
-        ?>
+    <!-- BODY HEADER -->
+    <section id="nav-head" style="background-color: #F1EAFF">
+      <header id="nav-head" style="background-color: #F1EAFF">
+            <?php 
+                    include('./shared/nav.php')
+                ?>
+        </header>
+
+        <!-- Image background -->
         <div class="" style="max-width: auto; background-color: #F1EAFF;">
-            <div class="hero-container">
-                <div class="hero-column">
-                        <h2>Experience tasty, aromas, and ambiance intertwine to create unforgettable memories.</h2>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
-                <div class="hero-column">
-                    <img src="images/hero.jpg" class="img-fluid rounded-start" alt="..." style="flex-shrink: 0;
-                    min-width: 100%;
-                    min-height: 100%">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/breakfast-cover.png" class="d-block w-100" alt="">
                 </div>
+                <div class="carousel-item">
+                    <img src="images/healthy-cover.png" class="d-block w-100" alt="...">
+                </div>
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </header>
-     <!-- BODY MAIN SECTION -->
-     <main>
+
+    </section>
+    <main>
+
+    <!-- Categories Section  -->
+    <section class="d-flex justify-content-center gap-5 mt-5">
+        <a href="./recipe.html#dinner">
+            <h3> Dinner </h3>
+        </a>
+        <a href="./recipe.html#dinner">
+            <h3> Launch </h3>
+        </a>
+        <a href="./recipe.html#dinner">
+            <h3> Breakfast </h3>
+        </a>
+        <a href="./recipe.html#dinner">
+            <h3> Desert </h3>
+        </a>
+    </section>
+        <p> 
+            <h3> About Us </h3>
+        </p>
+    <section>
+
+    </section>
+    <!-- Chef Section -->
+    <section>
+
+    </section>
+    <!-- BODY MAIN SECTION -->
         <!-- FREQUENTLY ASKED QUESTIONS -->
         <div id='faq'>
             <h1 style="text-align: center;">Frequently Asked Questions</h1>
@@ -45,7 +89,9 @@
                 </div>
             </div>
         </div>  
+
     </main>
+
     <!-- FOOTER -->
     <footer class="text-center text-white" id="footer" style="background-color: #910A67">
         <!-- Grid container -->
@@ -145,7 +191,8 @@
         </div>
         <!-- Copyright -->
     </footer>
-        <!-- JAVA SCRIPT LINK -->
+
+    <!-- JAVA SCRIPT LINK -->
     <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,3 +1,4 @@
+<!--  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +42,7 @@
                 </p>
             </form>
             <div id="create-account-wrap">
-                <p>Already a member? <a href="login.html">Sign In to Your Account</a><p>
+                <p>Already a member? <a href="login.php">Sign In to Your Account</a><p>
             </div><!--create-account-wrap-->
         </div>
     </main>
@@ -53,5 +54,6 @@
     <?php 
         include('./shared/footer_links.php')
     ?>
+    <script src="./backend/scripts/signup.js"> </script>
 </body>
 </html>
