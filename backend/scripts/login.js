@@ -18,6 +18,8 @@ $(document).ready(function() {
                 success: function(response) {
                     if (response === 'success') {
                         window.location.href = "./list_recipes.php"
+                    } else {
+                        alert(response)
                     }
                 }
             })

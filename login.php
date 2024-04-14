@@ -1,4 +1,10 @@
-
+<?php 
+    session_start();
+    if (isset($_SESSION['isAuthenticated'])) {
+        header('Location: ../../index.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +36,9 @@
                 <p>
                     <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
                 </p>
-                    <button type="button" id="login-btn" value="Login" style="background-color: #910A67; color: #fff;"> Signup </button>
+                <input type="button" id="login-btn" value="Login" style="background-color: #910A67; color: #fff;">
+
+                    <!-- <button type="button" id="login-btn" value="Login" style="background-color: #910A67; color: #fff;"> Signup </button> -->
             </form>
             <div id="create-account-wrap">
                 <p>Not a member? <a href="./signup.php">Create Account</a><p>

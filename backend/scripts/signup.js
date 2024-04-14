@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $(".signup-btn").click(function() {
+    $("#signup-btn").click(function() {
+        
         var fullname = $("#fullname").val();
         var email = $("#email").val();
         var user_type = $("#user_type").val();

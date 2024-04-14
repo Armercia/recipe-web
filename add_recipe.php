@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if (!isset($_SESSION['isAuthenticated'])) {
+        header('Location: ../../login.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,28 +27,31 @@
         <main>
         <div id="login-form-wrap" style="margin-top: 100px;">
             <h2> Add Recipe</h2>
-            <form id="login-form">
+            <form id="add-recipe-form"  enctype="multipart/form-data" method="POST">
+                <p class="feedback"> </p>
+
                 <p>
                     <input type="text" id="recipe_name" name="recipe_name" placeholder="Recipe Name" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
-                <input type="text" id="recipe_description" name="recipe_description" placeholder="Recipe Description" required><i class="validation"><span></span><span></span></i>
+                    <input type="text" id="recipe_description" name="recipe_description" placeholder="Recipe Description" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
-                <input type="text" id="recipe_instructions" name="recipe_instructions" placeholder="Recipe Instructions Address" required><i class="validation"><span></span><span></span></i>
-                </p>
-                <p>
-                    <input type="recipe_ingredients" id="recipe_ingredients" name="recipe_ingredients" placeholder="Confirm recipe_time" required><i class="validation"><span></span><span></span></i>
+                    <input type="recipe_ingredients" id="recipe_ingredients" name="recipe_ingredients" placeholder="Recipe Ingredients" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
                     <input type="number" id="recipe_time" name="recipe_time" placeholder="recipe_time" required><i class="validation"><span></span><span></span></i>
                 </p>
+                
+                <label for="recipe_list_id">Choose a Recipe Collection:</label>
+                <select class='mb-2' name="recipe_list_id" id="recipe_list_id">
+                    <option value="">--Please choose an option--</option>
+                </select>
                 <p>
-                    <input type="file" id="recipe_image" name="recipe_image" required><i class="validation"><span></span><span></span></i>
+                <input class='mb-2'  type="file" id="recipe_image" name="recipe_image" required><i class="validation"><span></span><span></span></i>
+
                 </p>
-                <p>
-                <input type="submit" id="add-recipe" value="Add Recipe" style="background-color: #910A67; color: #fff;">
-                </p>
+                <input type="submit" id="add-recipe" value="Add Recipe"  style="background-color: #910A67; color: #fff;"/>
             </form>
         </div>
         </main>
@@ -54,5 +64,7 @@
         include('./shared/footer_links.php')
     ?>
     <script src="./backend/scripts/add-recipe.js"> </script>
+    <script src="./backend/scripts/view-recipelist.js"> </script>
+
 </body>
 </html>

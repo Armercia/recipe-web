@@ -1,4 +1,10 @@
-<!--  -->
+<?php 
+    session_start();
+    if (isset($_SESSION['isAuthenticated'])) {
+        header('Location: ../../index.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +29,27 @@
             <h2>Signup</h2>
             <form id="login-form">
                 <p>
-                    <input type="text" id="fullname" name="fullname" placeholder="Firs Last" required><i class="validation"><span></span><span></span></i>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
                 <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
                 </p>
+                <fieldset style="font-size: 1rem;">
+                    <legend style="font-size: 1rem;">Select a User Type</legend>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <input type="radio" id="user_type" name="user_type" value="admin" />
+                            <label for="admin">Admin</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="user_type" name="user_type" value="cook" />
+                            <label for="cook">Cook</label>
+                        </div>
+
+                    </div>
+                    </fieldset>
+
                 <p>
                 <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
                 </p>
@@ -35,10 +57,10 @@
                     <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
-                    <input type="confirm-password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required><i class="validation"><span></span><span></span></i>
+                    <input type="password" id="conPassword" name="conPassword" placeholder="Confirm Password" required><i class="validation"><span></span><span></span></i>
                 </p>
                 <p>
-                <input type="submit" id="login" value="Create Account" style="background-color: #910A67; color: #fff;">
+                <input type="button" id="signup-btn" value="Create Account" style="background-color: #910A67; color: #fff;">
                 </p>
             </form>
             <div id="create-account-wrap">

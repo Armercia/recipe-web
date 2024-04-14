@@ -5,13 +5,14 @@ $(document).ready(function() {
             url: "./backend/php/add-recipelist.php",
             method: "POST",
             data: {
-                list_name: list_name
+                list_name: list_name,
+                add_recipelist: 1
             },
             success: function(response) {
                 if (response == "success") {
                     alert ("Created Collection Successfully");
                 } else {
-                    alert (response)
+                    alert ("error");
                 }
             }
         })

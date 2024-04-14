@@ -31,7 +31,7 @@
                     </ul>
               
                     <div class="search-bar">
-                        <form class="d-flex" role="search">
+                        <form class="d-flex gap-2" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                             <?php
@@ -39,10 +39,14 @@
                             echo '                 <a id="login-button" class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="login.php">Login</a>
                                             <a id="signup-button" class="btn btn-secondary nav-button" role="button" aria-disabled="false" href="signup.php">Signup</a>
                             ';
-                                        } 
+                                        }  else {
+                                            echo '  <a id="login-button" class="btn btn-secondary me-2 nav-button" role="button" aria-disabled="false" href="./backend/php/logout.php">Logout</a>';
+                                        }
                             ?>
 
                         </form>
+                        
                     </div>
+                    
             </div>
         </nav>

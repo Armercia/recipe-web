@@ -5,7 +5,7 @@
         exit();
     }
 
-    if (isset($_POST['signup-btn'])) {
+    if (isset($_POST['signup'])) {
         $email = $conn->real_escape_string($_POST['email']);
         $password = $conn->real_escape_string($_POST['password']);
         $conPassword = $conn->real_escape_string($_POST['conPassword']);

@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,6 @@
         <?php 
                 include('./shared/nav.php')
             ?>
-
     </header>
     
     <!-- BODY MAIN SECTION -->
@@ -23,7 +25,8 @@
         <?php 
         if (isset($_SESSION['isAuthenticated'])) {
         
-        echo '    <div id="login-form-wrap" style="margin-top: 100px;">
+        echo ' 
+        <div id="login-form-wrap" style="margin-top: 100px;">
             <h2> Add Recipe Collection </h2>
             <form id="login-form d-flex">
                 <p>
@@ -33,222 +36,12 @@
                     <input type="button" id="add-recipelist-btn" value="Add Recipe Collection" style="background-color: #910A67; color: #fff;">
                 </p>
             </form>
-        </div> ';
+        </div>';
         }
 
         ?>
-        <!-- Break Fast -->
-        <div id="breakfast" class="recipe-cards">
-            <h3 >BreakFast</h3>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 1</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 2</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 3</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 4</h5>
-                        <p class="card-text"></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 5</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/appetizer6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appetizer 6</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <!-- Launch -->
-         <div id="launch" class="recipe-cards">
-            <h3 > Launch </h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Dinner-->
-        <div id="dinner" class="recipe-cards">
-            <h3 > Dinner </h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- Desert-->
-          <div id="desert" class="recipe-cards">
-            <h3 > Desert </h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                    <img src="images/local5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Best apperixe</p>
-                    </div>
-                    </div>
-                </div>
+            <div id="recipelist-container">
+    
             </div>
         </div>
         <!-- FREQUENTLY ASKED QUESTIONS -->
@@ -280,5 +73,7 @@
             include('./shared/footer_links.php')
         ?>
         <script src="./backend/scripts/add-recipelist.js"> </script>
+        <script src="./backend/scripts/view-recipelist.js"> </script>
+
 </body>
 </html>
